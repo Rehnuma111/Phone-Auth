@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
+  background: #0000007a;
+}
+.btn {
+  padding: 1.5rem 1.5rem;
+  border: none;
+  color: aliceblue;
+  background-color: blue;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* login */
+.login-page ,.otp-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
+
+/* Style the container of the PhoneInput component */
+.phone-input-container {
+  width: 25rem;
+  margin-bottom: 10px;
+}
+
+/* Style the input element of the PhoneInput component */
+.phone-input-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the placeholder text of the PhoneInput component */
+/* .phone-input-container input::placeholder {
+  color: #999;
+} */
+
+/* Style the PhoneInput component when it has focus */
+.phone-input-container input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+button {
+  border: none;
+  width: 25rem;
+  background-color: rgb(162, 169, 169);
+  height: 5vh;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 16px;
+}
+
+
+/* Style the container of the OTP input field */
+.otp-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+ 
+}
+
+/* Style the input elements of the OTP input field */
+.otp-input input[type="text"] {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the input elements of the OTP input field when they have focus */
+.otp-input input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+/* .otp-input{
+  width:3rem
+} */
